@@ -21,7 +21,7 @@ public class PersonController {
         this.service = service;
     }
 
-    @GetMapping(produces = "applicaton/json")
+    @GetMapping(produces = "application/json")
     ResponseEntity<List<Person>> getAllPersons() {
         List<Person> list = service.getAll();
         return new ResponseEntity<>(list, HttpStatus.OK);}
